@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        let names = [ 
+            "Gustavo", "Carlos"  , "André",        
+            "Marcelo", "Ricardo" , "Antônio",
+            "Vitor"  , "Fábio"   , "Jorge",
+            "Murilo" , "Vinícius", "Fernanda",
+            "Bianca" , "Rafaela" , "Beatriz",
+            "Júlia"  , "Amanda"  , "Bruna",
+            "Isabela", "Sofia"   , "Alice",
+            "Laura"  , "Clara"   , "Yasmin",
+            "Elisa"  , "Cecília" , "Isabel",
+            "Heloísa", "Manuela" , "Gabriel"
+        ]
+
+
+        for(let times = 0; times < 10; times++){
+            var namesLeft = names.length
+            var randomNumber = Math.floor(Math.random() * namesLeft)
+            var name = names[ randomNumber ]
+            console.log( `${name} foi de horizontal` )
+            
+            names.splice( randomNumber, 1 )
+        }
+    </script>
+</html>

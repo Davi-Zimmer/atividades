@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var desejos = 4
+
+        console.warn("Você tem 3 desejos.")
+        for( var i = 0; i < desejos; i++){
+
+        if( i > 3 ){
+            console.error("voce não tem mais desejos.")
+            break;
+        }
+
+        var wish = prompt(`qual o seu desejo numero ${i + 1}?`) // mostra o desejo atual
+            console.log(`o desejo ${wish}, foi concedido`)
+        }
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var saldo = 1000
+        var valorDestinatario = prompt("digite o pix")
+        var valorPix = prompt("digite o valor pix")
+
+        if( valorPix <= saldo ){
+
+            saldo -= valorPix
+            console.log("efetuado com sucesso")
+            console.log(`seu saldo é de ${saldo}`)
+            
+        } else {
+            console.log("tu não consegue comprar isso")
+        }
+        
+    </script>
+</html>

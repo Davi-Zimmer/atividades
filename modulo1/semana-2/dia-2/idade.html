@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        
+    </body>
+
+    <script>
+        var name = prompt("qual seu nome?")
+        var age = parseInt(prompt("qual sua idade?"))
+
+
+        if( !name ){
+            console.log("digite um nome valido")
+
+        } else {
+            
+            if( age < 13 )              console.log(`${name}, Você é uma criança`);    else 
+            if( age >= 13 && age <= 17) console.log(`${name}, Você é um adolescente`); else
+            if( age >= 18 && age <= 64) console.log(`${name}, Você é um adulto`);      else 
+            if( age > 64)               console.log(`${name}, Você é um idoso`)
+        }
+
+    </script>
+</html>

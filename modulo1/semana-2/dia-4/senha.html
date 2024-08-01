@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var password = '4321'
+        var msg = "Digite sua senha"
+        do {
+            var passwordTyped = prompt(msg)
+            var samePassword = passwordTyped == password
+
+            if( samePassword ) console.log("voce acertou a senha")
+            else
+            {
+                msg = "Senha incorreta tente novamente"
+            } 
+
+        } while ( !samePassword )
+
+    </script>
+</html>

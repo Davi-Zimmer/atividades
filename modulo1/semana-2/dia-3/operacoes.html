@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var number1 = Math.floor(Math.random() * 50)
+        var number2 = Math.floor(Math.random() * 50)
+
+        var addition        = number1 + number2
+        var subtraction     = number1 - number2
+        var division        = number1 / number2
+        var multiplication  = number1 * number2
+
+        console.log(`numero1: ${number1}, numero2: ${number2}`)
+        console.log(`soma: ${addition}`)
+        console.log(`subtração: ${subtraction}`)
+        console.log(`divisão: ${division}`)
+        console.log(`multiplicação: ${multiplication}`)
+
+
+        /// checagem com os numeros
+        var msg = []
+        if( number1 == number2 ) msg.push("os numeros são iguais");     
+        if( number1 != number2 ) msg.push("os numeros são diferentes"); 
+        if( number1 >  number2 ) msg.push("o primeiro numero é maior que o segundo");
+        if( number1 <= number2 ) msg.push("o primeiro numero é menor ou igual ao segundo");
+
+        console.log( ...msg )
+    </script>
+</html>
