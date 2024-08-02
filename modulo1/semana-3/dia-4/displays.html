@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* ocupa toda a largura disponivel */
+            .d-block{
+                display: block;
+                margin: 10px 0 ;
+            }
+
+            .w-50 {
+                width: 50vw;
+            }
+
+            /* ocupa apenas o tamanho nescessario pra existir */
+            .d-inline{
+                display: inline;
+            }
+
+            .d-flex {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                height: 180px;
+                background-color: aquamarine;
+            }
+
+            .header{
+                background-color: blue;
+                height: 30px;
+            }
+
+            .content {
+                background-color: azure;
+                height: 30px;
+                
+            }
+
+            .d-grid {
+                margin-top: 30px;
+                display: grid;
+                grid-template-rows: 80px 1fr;
+                width: 300px;
+                height: 180px;
+                background-color: cadetblue;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="d-flex">
+            <div class="header">asdasd</div>
+            <div class="content">asdasd</div>
+        </div>
+
+        <div class="d-grid">
+            <div>aaaaaaa</div>
+            <div>bbababa</div>
+        </div>
+
+
+        <!-- <div class="d-block">
+            <h2> display block </h2>
+            <div class="w-50">
+                <span class="d-block"> display block</span>
+                <span class="d-inline">texto 1</span>
+                <span class="d-inline">texto 2</span>
+                <span class="d-inline">texto 3</span>
+            </div>
+            
+                            
+            <h2> display block </h2>
+            <div class="d-flex">
+                <span>texto 1</span>
+                <span>texto 2</span>
+                <span>texto 3</span>
+            </div>
+        </div> -->
+
+        
+    </body>
+
+</html>
